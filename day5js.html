@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="anu" onclick="kalli()">Hello baby good mrg .......have a nice day</p>
+	<button id="mango" onclick="andra()">login</button>
+	<button onclick="alert('login success fully')">login</button>
+	<button onclick="kalli1()"> click me</button>
+	<p id="mango1">why are you here?</p>
+
+
+</body>
+	<script>
+		function kalli()
+		{
+			document.getElementById('anu').innerHTML="Happy sunday";
+		}
+		function andra()
+		{
+			document.getElementById('mango').innerHTML="Welcome to CIET";
+		}
+		function kalli1()
+		{
+             var a;
+             if(confirm('tell me your answer?'))	
+             {
+             	a="i am waiting for friend";
+             }
+             else
+             {
+             	a="no dear,for bus";
+             }	
+             document.getElementById('mango1').innerHTML=a;
+		}
+	</script>
+</html>
