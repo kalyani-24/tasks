@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky Number Game</title>
+</head>
+<body>
+    <h2>Enter a number between 1 and 10:</h2>
+    <input type="number" id="luckynum">
+    <button onclick="luckyfunction()">Check it</button>
+
+    <script>
+        function luckyfunction() {
+            var a = Math.floor(Math.random() * 10) + 1; // Generates random number between 1 and 10
+            var b = document.getElementById('luckynum').value;
+            b = Number(b); // Convert input value to number
+
+            if (a === b) {
+                alert('Lucky! The lucky number was ' + a);
+            } else {
+                alert('Unlucky! You guessed ' + b + ', but the lucky number was ' + a);
+            }
+        }
+    </script>
+
+</body>
+</html>
